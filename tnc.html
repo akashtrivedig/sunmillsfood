@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunmills Food | Terms & Conditions</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <base href="/" target="_self">
+  <title>Terms & Conditions | Sunmills Food</title>
+  <script src="../assets/js/tailwind.js"></script>
   <link rel="stylesheet" href="/assets/css/global.css">
   <link rel="stylesheet" href="/assets/css/global.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,33 +69,34 @@
   </main>
 
   <footer class="bg-stone-100">
-    <div class="max-w-6xl mx-auto p-4 md:py-16 text-sm" id="footer-container">
-      <div class="flex md:flex-row flex-col md:gap-20 gap-6">
+    <div class="container cw text-sm max-w-[70vw]" id="footer-container">
+      <div class="flex md:flex-row flex-col md:gap-20 gap-6 justify-between">
         <div class="">
-          <img src="/assets/images/logo.png" alt="sunmills-food-logo" class="md:w-32 w-24 aspect-square">
+          <img src="/assets/images/logo.png" alt="sunmills-food-logo" class="md:w-32 w-24 aspect-square rounded-full">
         </div>
 
         <div class="flex md:flex-row flex-col justify-between md:gap-8 gap-6">
           <!-- footer column -->
           <div id="contact-us" class="column max-w-md">
-            <h2 class="text-lg font-semibold mb-2">Contact</h2>
+            <h2 class="heading-2">Contact</h2>
             <ul class="leading-6">
-              <li class="flex gap-1 items-center">
-
-                <span class="">Address : Mayur House 15/63 Opp. Gate no 2 Green Park Civil Lines, Kanpur, 208001</span>
+              <li class="w-full flex">
+                <span class="mr-2">Address:</span> Village Bhikharipur, Chaubeypur, Bihaur Tahsil, Kanpur Nagar, Uttar
+                Pradesh - 209203
               </li>
-              <li class="flex gap-1 items-center">
-                <a href="tel:+99" class="mb-1 hover:text-amber-600 w-fit">Phone : 1800 120 8777</a>
-              </li>
-              <li class="flex gap-1 items-center">
-                <a href="mailto:asd@gmail.com" class="mb-1 hover:text-amber-600 w-fit">Email : info@mayurgroup.com</a>
+              <li id="contact" class="w-full flex gap-2">
+                <span class="">Customer Care:</span>
+                <span class="flex flex-row gap-1">
+                  <a href="tel:+918112553555" class="mb-1 hover:text-amber-600 w-fit">811 255 3555</a>,
+                  <a href="tel:+918960553555" class="mb-1 hover:text-amber-600 w-fit">896 055 3555</a>
+                </span>
               </li>
             </ul>
           </div>
 
           <!-- footer column -->
           <div id="footer-links" class="column max-w-md">
-            <h2 class="text-lg font-semibold mb-2">Links</h2>
+            <h2 class="heading-2">Links</h2>
             <ul class="">
               <li class="mb-1 hover:text-amber-600 w-fit">
                 <a href="/about_us.html" class="">About Us</a>
@@ -105,7 +105,7 @@
                 <a href="" class="">Privacy Policy</a>
               </li>
               <li class="mb-1 hover:text-amber-600 w-fit">
-                <a href="" class="">Terms and Conditions</a>
+                <a href="/tnc.html" class="">Terms and Conditions</a>
               </li>
             </ul>
           </div>
@@ -114,8 +114,9 @@
     </div>
 
     <div class="bg-white">
-      <div id="footer-bottom" class="max-w-6xl mx-auto p-4 text-sm text-center">
-        Copyright © Sunmills Group. All Rights Reserved.
+      <div id="footer-bottom"
+        class="max-w-6xl mx-auto px-4 py-3 text-sm text-center flex md:flex-row flex-col justify-center">
+        <span class="">Copyright © Sunmills Group.</span> <span class="">All Rights Reserved.</span>
       </div>
     </div>
   </footer>

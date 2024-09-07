@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <base href="/" target="_self">
   <link rel="stylesheet" href="/assets/css/global.css">
+  <script src="/assets/js/product.js"></script>
 </head>
 
 <body>
@@ -29,10 +30,21 @@
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto md:py-16 md:px-8 px-4 py-6 md:grid grid-cols-2">
-    <div class="flex justify-center">
-      <div class="w-64 aspect-square">
-        <img src="assets/images/maida.jpg" alt="" class="aspect-square">
+  <main class="max-w-6xl mx-auto md:py-16 md:px-8 px-4 py-6 grid md:grid-cols-2 grid-cols-1 gap-6">
+    <div class="flex flex-col items-center gap-6">
+      <div class="w-64 aspect-square" id="">
+        <img src="assets/images/maida.jpg" alt="" class="product-img-active fadeIn">
+      </div>
+      <div class="flex gap-2">
+        <div class="w-28 cursor-pointer aspect-square border border-gray-300 rounded-sm hover:shadow p-2">
+          <img src="/assets/images/logo.png" alt="" class="aspect-square product-img">
+        </div>
+        <div class="w-28 cursor-pointer aspect-square border border-gray-300 rounded-sm hover:shadow p-2">
+          <img src="assets/images/maida.jpg" alt="" class="aspect-square product-img">
+        </div>
+        <div class="w-28 cursor-pointer aspect-square border border-gray-300 rounded-sm hover:shadow p-2">
+          <img src="assets/images/maida.jpg" alt="" class="aspect-square product-img">
+        </div>
       </div>
     </div>
 

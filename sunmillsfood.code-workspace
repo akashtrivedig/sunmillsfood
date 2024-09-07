@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.fontSize": 13,
+    "workbench.colorTheme": "CodeSandbox Black",
+    "editor.fontFamily": "jetbrains mono",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.letterSpacing": 0.4,
+    "editor.lineHeight": 1.5
+  }
+}

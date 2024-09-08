@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Sunmills Food</title>
   <script src="./assets/js/tailwind.js"></script>
+  <script src="./assets/js/global.js"></script>
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,18 +17,36 @@
 
 <body>
   <header class="sticky top-0 shadow bg-white">
-    <div class="max-w-7xl mx-auto md:px-8 md:py-2 py-2 px-3 flex justify-between items-center">
-      <div class="w-16 aspect-square">
+    <div class="" id="scroll-progress"></div>
+    <div class="sm:max-w-[70vw] mx-auto sm:px-0 md:py-2 py-2 px-4 flex justify-between items-center">
+      <div class="md:w-16 w-12 aspect-square">
         <a href="./" class="">
-          <img src="assets/images/logo.png" alt="" class="aspect-square w-auto h-auto">
+          <img src="./assets/images/logo-3.png" alt="" class="aspect-square w-auto h-auto rounded-full">
         </a>
       </div>
 
       <div class="" id="header-links">
-        <ul class="flex gap-6 items-center">
-          <li class=""><a href="" class="hover:underline">Vision</a></li>
-          <li class=""><a href="" class="hover:underline">About</a></li>
-          <li class=""><a href="" class="hover:underline">Contact</a></li>
+        <ul class="flex md:gap-6 gap-4 items-center md:text-base text-sm">
+          <li class="relative cursor-default" id="product-dropdown">
+            <span class="">Products</span>
+            <div class="absolute w-fit whitespace-nowrap -left-8 text-sm" id="dropdown" data-show="0">
+              <ul class="hover:no-underline bg-gray-50 rounded-md shadow-md">
+                <li class="">
+                  <a href="./chakki-fresh-atta.html" class="hover:bg-amber-100/50 inline-block pt-2 px-4">
+                    Chakki Fresh Atta
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="./besan-gram-flour.html" class="hover:bg-amber-100/50 inline-block pt-2 px-4">
+                    Besan Gram Flour
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="#contact" class="hover:underline">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -67,11 +86,12 @@
 
   </main>
 
-  <footer class="bg-stone-100">
-    <div class="container cw text-sm max-w-[70vw]" id="footer-container">
+  <footer class="bg-stone-100" id="footer">
+    <div class="container text-sm sm:max-w-[70vw]" id="footer-container">
       <div class="flex md:flex-row flex-col md:gap-20 gap-6 justify-between">
         <div class="">
-          <img src="./assets/images/logo.png" alt="sunmills-food-logo" class="md:w-32 w-24 aspect-square rounded-full">
+          <img src="./assets/images/logo-3.png" alt="sunmills-food-logo"
+            class="md:w-32 w-24 block aspect-square rounded-full">
         </div>
 
         <div class="flex md:flex-row flex-col justify-between md:gap-8 gap-6">
@@ -86,8 +106,8 @@
               <li id="contact" class="w-full flex gap-2">
                 <span class="">Customer Care:</span>
                 <span class="flex flex-row gap-1">
-                  <a href="tel:+918112553555" class="mb-1 hover:text-amber-600 w-fit">811 255 3555</a>,
-                  <a href="tel:+918960553555" class="mb-1 hover:text-amber-600 w-fit">896 055 3555</a>
+                  <a href="tel:+918112553555" class="mb-1 hover:text-amber-600 w-fit">811-255-3555</a>,
+                  <a href="tel:+918960553555" class="mb-1 hover:text-amber-600 w-fit">896-055-3555</a>
                 </span>
               </li>
             </ul>
@@ -101,9 +121,6 @@
                 <a href="./about_us.html" class="">About Us</a>
               </li>
               <li class="mb-1 hover:text-amber-600 w-fit">
-                <a href="" class="">Privacy Policy</a>
-              </li>
-              <li class="mb-1 hover:text-amber-600 w-fit">
                 <a href="./tnc.html" class="">Terms and Conditions</a>
               </li>
             </ul>
@@ -114,8 +131,8 @@
 
     <div class="bg-white">
       <div id="footer-bottom"
-        class="max-w-6xl mx-auto px-4 py-3 text-sm text-center flex md:flex-row flex-col justify-center">
-        <span class="">Copyright © Sunmills Group.</span> <span class="">All Rights Reserved.</span>
+        class="max-w-6xl mx-auto md:px-4 py-3 text-xs md:text-sm text-center flex md:flex-row flex-col justify-center">
+        Copyright © Sunmills Group. All Rights Reserved.
       </div>
     </div>
   </footer>

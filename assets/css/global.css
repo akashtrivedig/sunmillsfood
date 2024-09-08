@@ -90,3 +90,10 @@
     opacity: 1;
   }
 }
+
+#dropdown[data-show="1"] {
+  display: block;
+}
+#dropdown[data-show="0"] {
+  display: none;
+}

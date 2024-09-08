@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atta | Sunmills Food</title>
+
   <script src="./assets/js/tailwind.js"></script>
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <script src="./assets/js/global.js"></script>
   <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,19 +19,37 @@
 
 <body>
 
-  <header id="header" class="sticky top-0 shadow bg-white">
+  <header class="sticky top-0 shadow bg-white">
     <div class="" id="scroll-progress"></div>
-    <div class="cw md:px-0 md:py-2 py-2 px-3 flex justify-between items-center">
+    <div class="sm:max-w-[70vw] mx-auto sm:px-0 md:py-2 py-2 px-4 flex justify-between items-center">
       <div class="md:w-16 w-12 aspect-square">
         <a href="./" class="">
-          <img src="assets/images/logo.png" alt="" class="aspect-square w-auto h-auto rounded-full">
+          <img src="./assets/images/logo-3.png" alt="" class="aspect-square w-auto h-auto rounded-full">
         </a>
       </div>
 
       <div class="" id="header-links">
         <ul class="flex md:gap-6 gap-4 items-center md:text-base text-sm">
-          <li class=""><a href="" class="hover:underline">About</a></li>
-          <li class=""><a href="#contact" class="hover:underline">Contact</a></li>
+          <li class="relative cursor-default" id="product-dropdown">
+            <span class="">Products</span>
+            <div class="absolute w-fit whitespace-nowrap -left-8 text-sm" id="dropdown" data-show="0">
+              <ul class="hover:no-underline bg-gray-50 rounded-md shadow-md">
+                <li class="">
+                  <a href="./chakki-fresh-atta.html" class="hover:bg-amber-100/50 inline-block pt-2 px-4">
+                    Chakki Fresh Atta
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="./besan-gram-flour.html" class="hover:bg-amber-100/50 inline-block pt-2 px-4">
+                    Besan Gram Flour
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="#contact" class="hover:underline">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,17 +58,17 @@
   <main class="max-w-6xl mx-auto md:py-16 md:px-8 px-4 py-6 grid md:grid-cols-2 grid-cols-1 gap-6">
     <div class="flex flex-col items-center gap-6">
       <div class="w-64 aspect-square" id="">
-        <img src="/assets/images/Atta.jpeg" alt="" class="product-img-active fadeIn">
+        <img src="./assets/images//atta_10kg.jpeg" alt="" class="product-img-active fadeIn">
       </div>
       <div class="flex gap-2">
         <div class="w-28 cursor-pointer aspect-square border border-gray-300 rounded-sm hover:shadow p-2">
-          <img src="./assets/images/logo.png" alt="" class="aspect-square product-img">
+          <img src="./assets/images/atta_10kg.jpeg" alt="" class="aspect-square product-img">
         </div>
         <div class="w-28 cursor-pointer aspect-square border border-gray-300 rounded-sm hover:shadow p-2">
-          <img src="assets/images/maida.jpg" alt="" class="aspect-square product-img">
+          <img src="./assets/images/atta_10kg_back.jpeg" alt="" class="aspect-square product-img">
         </div>
         <div class="w-28 cursor-pointer aspect-square border border-gray-300 rounded-sm hover:shadow p-2">
-          <img src="assets/images/maida.jpg" alt="" class="aspect-square product-img">
+          <img src="./assets/images/logo-3.png" alt="" class="aspect-square product-img">
         </div>
       </div>
     </div>
@@ -57,7 +77,7 @@
       <h1 class="text-2xl leading-6 font-medium mb-4" id="product-name">Chakki Fresh Atta</h1>
       <div class="text-gray-700">
         <div class="text-sm leading-6" id="product-footer">
-          Discover the essence of wholesome goodness with our Premium Whole Wheat Atta. Ground from the finest quality
+          Discover the essence of wholesome goodness with our Chakki Fresh Atta. Ground from the finest quality
           wheat grains, our atta brings the authentic taste and texture of traditional Indian breads and dishes to your
           kitchen.
         </div>
@@ -92,11 +112,12 @@
     </div>
   </main>
 
-  <footer class="bg-stone-100">
-    <div class="container cw text-sm max-w-[70vw]" id="footer-container">
+  <footer class="bg-stone-100" id="footer">
+    <div class="container text-sm sm:max-w-[70vw]" id="footer-container">
       <div class="flex md:flex-row flex-col md:gap-20 gap-6 justify-between">
         <div class="">
-          <img src="./assets/images/logo.png" alt="sunmills-food-logo" class="md:w-32 w-24 aspect-square rounded-full">
+          <img src="./assets/images/logo-3.png" alt="sunmills-food-logo"
+            class="md:w-32 w-24 block aspect-square rounded-full">
         </div>
 
         <div class="flex md:flex-row flex-col justify-between md:gap-8 gap-6">
@@ -111,8 +132,8 @@
               <li id="contact" class="w-full flex gap-2">
                 <span class="">Customer Care:</span>
                 <span class="flex flex-row gap-1">
-                  <a href="tel:+918112553555" class="mb-1 hover:text-amber-600 w-fit">811 255 3555</a>,
-                  <a href="tel:+918960553555" class="mb-1 hover:text-amber-600 w-fit">896 055 3555</a>
+                  <a href="tel:+918112553555" class="mb-1 hover:text-amber-600 w-fit">811-255-3555</a>,
+                  <a href="tel:+918960553555" class="mb-1 hover:text-amber-600 w-fit">896-055-3555</a>
                 </span>
               </li>
             </ul>
@@ -126,9 +147,6 @@
                 <a href="./about_us.html" class="">About Us</a>
               </li>
               <li class="mb-1 hover:text-amber-600 w-fit">
-                <a href="" class="">Privacy Policy</a>
-              </li>
-              <li class="mb-1 hover:text-amber-600 w-fit">
                 <a href="./tnc.html" class="">Terms and Conditions</a>
               </li>
             </ul>
@@ -139,8 +157,8 @@
 
     <div class="bg-white">
       <div id="footer-bottom"
-        class="max-w-6xl mx-auto px-4 py-3 text-sm text-center flex md:flex-row flex-col justify-center">
-        <span class="">Copyright © Sunmills Group.</span> <span class="">All Rights Reserved.</span>
+        class="max-w-6xl mx-auto md:px-4 py-3 text-xs md:text-sm text-center flex md:flex-row flex-col justify-center">
+        Copyright © Sunmills Group. All Rights Reserved.
       </div>
     </div>
   </footer>
